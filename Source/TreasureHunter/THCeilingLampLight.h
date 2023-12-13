@@ -4,13 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/PointLightComponent.h"
 #include "THCeilingLampLight.generated.h"
 
 UCLASS()
 class TREASUREHUNTER_API ATHCeilingLampLight : public AActor
 {
-	GENERATED_BODY()
-	
+	GENERATED_BODY()	
+
+	UStaticMeshComponent* StaticMesh;
+	UPointLightComponent* PointLight;
+
 public:	
 	// Sets default values for this actor's properties
 	ATHCeilingLampLight();

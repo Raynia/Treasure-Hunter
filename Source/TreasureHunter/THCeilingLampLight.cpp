@@ -7,8 +7,13 @@
 ATHCeilingLampLight::ATHCeilingLampLight()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Ceiling Lamp"));
+	PointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("Point Light"));
+
+	StaticMesh->SetupAttachment(RootComponent);
+	PointLight->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
