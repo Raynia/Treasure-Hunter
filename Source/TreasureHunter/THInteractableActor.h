@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "THInteractableAcor.generated.h"
+#include "THInteractableActor.generated.h"
 
 UCLASS()
-class TREASUREHUNTER_API ATHInteractableAcor : public AActor
+class TREASUREHUNTER_API ATHInteractableActor : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ATHInteractableAcor();
+	ATHInteractableActor();
 
 protected:
 	// Called when the game starts or when spawned

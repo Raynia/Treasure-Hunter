@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "THInteractableAcor.h"
+#include "THInteractableActor.h"
 
 // Sets default values
-ATHInteractableAcor::ATHInteractableAcor()
+ATHInteractableActor::ATHInteractableActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -12,14 +12,14 @@ ATHInteractableAcor::ATHInteractableAcor()
 }
 
 // Called when the game starts or when spawned
-void ATHInteractableAcor::BeginPlay()
+void ATHInteractableActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void ATHInteractableAcor::Tick(float DeltaTime)
+void ATHInteractableActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
